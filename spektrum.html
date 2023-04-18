@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Tim Vischer/Commercial</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="fullpage.css" />
+  <link rel="stylesheet" href="mystyle.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <!-- This following line is optional.
+    Only necessary if you use the option css3:false and you want to use other easing effects
+     rather than "linear", "swing" or "easeInOutCubic". -->
+  <script src="vendors/jquery.easings.min.js"></script>
+  <!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
+  <script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
+  <script type="text/javascript" src="fullpage.js"></script>
+  <script type="text/javascript" src="my.js"></script>
+
+</head>
+
+
+<body>
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-content" style="max-width:1900px">
+
+    <!-- Header -->
+    <header class="w3-container w3-xlarge w3-padding-24">
+      <div class="header-top clearfix">
+        <div class="section">
+          <a href=#>
+	           <button class="slide-nav-btn menu" type="button">
+		             <span class="nav-bar"></span>
+          </button>  </a>
+          <nav>
+            <ul>
+              <li><a href="photos.html">photography</a></li>
+              <li><a href="commercial.html">commercial work</a></li>
+              <li><a href="personal.html">personal work</a></li>
+              <li><a href="spektrum.html">thesis spektrum</a></li>
+              <li><a href="about.html">about</a></li>
+            </ul>
+            <!-- <span style="color: #f8f8f8; font-size: 20px; position: relative; top: -50px;left: 150px;">Based on CTPBoston.com</span> -->
+          </nav>
+          <h1 class="l-left"><a href="index.html"><img src="images/logos/headerlogowhite.svg" width="80" height="70"></a></h1>
+        </div>
+      </div>
+    </header>
+
+<div id="fullpage">
+
+
+  <section class="vertical-scrolling" id="WhiteSection" data-anchor="thesisPDF">
+      <div class="horizontal-scrolling">
+        <img data-src="images/SpektrumL.jpg">
+      </div>
+  </section>
+
+  <section class="vertical-scrolling" id="VideoSection" data-anchor="red">
+    <video id="myVideo" loop muted data-autoplay>
+    <source data-src="mp4/1-Rot.mp4" type="video/mp4">
+  </video>
+    <div class="layer">
+            <a href="https://youtu.be/sxAKzTViGKk" target="_blank"><img src="images/icons/play_icon.svg" width="80" height="80"></a>
+    </div>
+  </section>
+
+  <section class="vertical-scrolling" id="VideoSection" data-anchor="orange">
+    <video id="myVideo" loop muted data-autoplay>
+    <source data-src="mp4/2-Orange.mp4" type="video/mp4">
+  </video>
+    <div class="layer">
+            <a href="https://youtu.be/Xrw3egHJeJ4" target="_blank"><img src="images/icons/play_icon.svg" width="80" height="80"></a>
+    </div>
+  </section>
+
+  <section class="vertical-scrolling" id="VideoSection" data-anchor="yellow">
+    <video id="myVideo" loop muted data-autoplay>
+    <source data-src="mp4/3-Gelb.mp4" type="video/mp4">
+  </video>
+    <div class="layer">
+            <a href="https://youtu.be/3f2R39ZwCrs" target="_blank"><img src="images/icons/play_icon.svg" width="80" height="80"></a>
+    </div>
+  </section>
+
+  <section class="vertical-scrolling" id="VideoSection" data-anchor="green">
+    <video id="myVideo" loop muted data-autoplay>
+    <source data-src="mp4/4-Gruen.mp4" type="video/mp4">
+  </video>
+    <div class="layer">
+            <a href="https://youtu.be/kbaSKrKG_JQ" target="_blank"><img src="images/icons/play_icon.svg" width="80" height="80"></a>
+    </div>
+  </section>
+
+  <section class="vertical-scrolling" id="VideoSection" data-anchor="blue">
+    <video id="myVideo" loop muted data-autoplay>
+    <source data-src="mp4/5-Blau.mp4" type="video/mp4">
+  </video>
+    <div class="layer">
+            <a href="https://youtu.be/2ff4ZLO3Mtk" target="_blank"><img src="images/icons/play_icon.svg" width="80" height="80"></a>
+    </div>
+  </section>
+
+  <section class="vertical-scrolling" id="VideoSection" data-anchor="violet">
+    <video id="myVideo" loop muted data-autoplay>
+    <source data-src="mp4/6-Lila.mp4" type="video/mp4">
+  </video>
+    <div class="layer">
+            <a href="https://youtu.be/Y4s-ZrOVB18" target="_blank"><img src="images/icons/play_icon.svg" width="80" height="80"></a>
+    </div>
+  </section>
+
+  <section class="vertical-scrolling" id="VideoSection" data-anchor="thesisPDF">
+  <embed src="pdf/SpektrumDigital.pdf" width="100%" height="100%"></embed>
+  </section>
+
+</div>
+
+</body>
+
+</html>
