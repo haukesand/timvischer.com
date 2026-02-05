@@ -133,6 +133,7 @@ p {
 .slide-nav-btn {
   cursor: pointer;
   width: 50px;
+  margin-top: 2rem;
 }
 
 .menu {
