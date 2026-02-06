@@ -1,4 +1,10 @@
-html, body { margin: 0 !important; padding: 0 !important; overflow-x: hidden !important; }
+html,
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow-x: hidden !important;
+}
+
 @import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,700);
 
 /*a {
@@ -172,12 +178,27 @@ p {
   transition: transform 0.3s, top 0.3s;
 }
 
-.nav-bar::before { top: -8px; }
-.nav-bar::after { top: 8px; }
+.nav-bar::before {
+  top: -8px;
+}
 
-.slide-nav-btn.active .nav-bar { background-color: transparent !important; }
-.slide-nav-btn.active .nav-bar::before { transform: rotate(45deg); top: 0; }
-.slide-nav-btn.active .nav-bar::after { transform: rotate(-45deg); top: 0; }
+.nav-bar::after {
+  top: 8px;
+}
+
+.slide-nav-btn.active .nav-bar {
+  background-color: transparent !important;
+}
+
+.slide-nav-btn.active .nav-bar::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.slide-nav-btn.active .nav-bar::after {
+  transform: rotate(-45deg);
+  top: 0;
+}
 
 .global-nav {
   position: fixed !important;
@@ -187,7 +208,7 @@ p {
   bottom: 0 !important;
   width: 100% !important;
   height: 100% !important;
-  background: rgba(0, 0, 0, 0.98) !important;
+  background: rgba(0, 0, 0, 0.7) !important;
   z-index: 10000 !important;
   opacity: 0 !important;
   visibility: hidden !important;
@@ -235,6 +256,13 @@ body.menu-open .header-top::before {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%) !important;
   pointer-events: none !important;
 }
+
+/* Hide interactive elements when menu is open */
+body.menu-open .layer,
+body.menu-open #over {
+  display: none !important;
+}
+
 /* SECTION STYLES - fullPage.js
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -509,7 +537,7 @@ video::-webkit-media-controls {
     max-height: 00%;
   }
 
-  
+
 
 }
 
@@ -530,7 +558,7 @@ video::-webkit-media-controls {
     max-height: 70%;
   }
 
-  
+
 }
 
 /*breitbild*/
@@ -550,7 +578,7 @@ video::-webkit-media-controls {
     width: auto;
   }
 
-  
+
 }
 
 /*video -----------------------------*/
