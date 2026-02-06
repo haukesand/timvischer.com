@@ -8,7 +8,7 @@
 
   <link rel="stylesheet" type="text/css" href="fullpage.css" />
   <link rel="stylesheet" href="mystyle.css">
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <!-- This following line is optional.
     Only necessary if you use the option css3:false and you want to use other easing effects
      rather than "linear", "swing" or "easeInOutCubic". -->
@@ -22,109 +22,128 @@
 
 
 <body>
+  <header class="header-top">
+    <div class="header-inner">
+      <div class="logo-wrap">
+        <a href="index.html">
+          <img src="images/logos/headerlogowhite.svg" width="80" height="70" alt="Tim Vischer Logo">
+        </a>
+      </div>
+      <button class="slide-nav-btn menu" type="button">
+        <span class="nav-bar"></span>
+      </button>
+    </div>
+  </header>
+  <nav class="global-nav">
+    <ul>
+      <li><a href="photos.html">photography</a></li>
+      <li><a href="commercial.html">commercial work</a></li>
+      <li><a href="personal.html">personal work</a></li>
+      <li><a href="spektrum.html">thesis spektrum</a></li>
+      <li><a href="about.html">about</a></li>
+      <li>
+        <a href="https://video.timvischer.com" target="_blank" rel="noopener noreferrer">
+          Video Portfolio 
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 5px; vertical-align: middle;">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  
   <!-- !PAGE CONTENT! -->
   <div class="w3-content" style="max-width:1900px">
 
     <!-- Header -->
-    <header class="w3-container w3-xlarge w3-padding-24">
-      <div class="header-top clearfix">
-        <div class="section">
-          <a href=#>
-	           <button class="slide-nav-btn menu" type="button">
-		             <span class="nav-bar"></span>
-          </button>  </a>
-          <nav>
-            <ul>
-              <li><a href="photos.html">photography</a></li>
-              <li><a href="commercial.html">commercial work</a></li>
-              <li><a href="personal.html">personal work</a></li>
-              <li><a href="spektrum.html">thesis spektrum</a></li>
-              <li><a href="about.html">about</a></li>
-            </ul>
-            <!-- <span style="color: #f8f8f8; font-size: 20px; position: relative; top: -50px;left: 150px;">Based on CTPBoston.com</span> -->
-          </nav>
-          <h1 class="l-left"><a href="index.html"><img src="images/logos/headerlogowhite.svg" width="80" height="70"></a></h1>
+                    
+    
+
+    <div id="fullpage">
+
+      <section class="vertical-scrolling" id="VideoSection" data-anchor="Bucherer1888">
+        <video id="myVideo" loop muted data-autoplay>
+          <source data-src="mp4/Bucherer.mp4" type="video/mp4">
+        </video>
+        <div class="layer">
+          <a href="https://youtu.be/R8n5sitBN1Q" target="_blank"><img src="images/icons/play_icon.svg" width="80"
+              height="80"></a>
         </div>
-      </div>
-    </header>
+        <div class="layer-client">
+          <h1 class="client">Bucherer 1888</p>
+        </div>
+      </section>
 
-<div id="fullpage">
+      <section class="vertical-scrolling" id="VideoSection" data-anchor="P30Pro">
+        <video id="myVideo" loop muted data-autoplay>
+          <source data-src="mp4/HUAWEI_P30pro.mp4" type="video/mp4">
+        </video>
+        <div class="layer">
+          <a href="https://youtu.be/XtEkA377Dzs" target="_blank"><img src="images/icons/play_icon.svg" width="80"
+              height="80"></a>
+        </div>
+        <div class="layer-client">
+          <h1 class="client">Huawei P30 Pro</p>
+        </div>
+      </section>
 
-  <section class="vertical-scrolling" id="VideoSection" data-anchor="Bucherer1888">
-    <video id="myVideo" loop muted data-autoplay>
-    <source data-src="mp4/Bucherer.mp4" type="video/mp4">
-  </video>
-    <div class="layer">
-            <a href="https://youtu.be/R8n5sitBN1Q" target="_blank"><img src="images/icons/play_icon.svg" width="80" height="80"></a>
-    </div>
-    <div class="layer-client">
-        <h1 class="client">Bucherer 1888</p>
-    </div>
-  </section>
+      <section class="vertical-scrolling" id="VideoSection" data-anchor="Psmart">
+        <video id="myVideo" loop muted data-autoplay>
+          <source data-src="mp4/HUAWEI_Psmart.mp4" type="video/mp4">
+        </video>
+        <div class="layer">
+          <a href="https://youtu.be/fI4OyjEALtQ" target="_blank"><img src="images/icons/play_icon.svg" width="80"
+              height="80"></a>
+        </div>
+        <div class="layer-client">
+          <h1 class="client">Huawei PSmart</p>
+        </div>
+      </section>
 
-  <section class="vertical-scrolling" id="VideoSection" data-anchor="P30Pro">
-    <video id="myVideo" loop muted data-autoplay>
-    <source data-src="mp4/HUAWEI_P30pro.mp4" type="video/mp4">
-  </video>
-    <div class="layer">
-            <a href="https://youtu.be/XtEkA377Dzs" target="_blank"><img src="images/icons/play_icon.svg" width="80" height="80"></a>
-    </div>
-    <div class="layer-client">
-        <h1 class="client">Huawei P30 Pro</p>
-    </div>
-  </section>
+      <section class="vertical-scrolling" id="VideoSection" data-anchor="Fiete">
+        <video id="myVideo" loop muted data-autoplay>
+          <source data-src="mp4/Tattoo-Fiete.mp4" type="video/mp4">
+        </video>
+        <div class="layer">
+          <a href="https://youtu.be/HDsVbYjXdNk" target="_blank"><img src="images/icons/play_icon.svg" width="80"
+              height="80"></a>
+        </div>
+        <div class="layer-client">
+          <h1 class="client">Stadtrad Tattoo-Fiete</p>
+        </div>
+      </section>
 
-  <section class="vertical-scrolling" id="VideoSection" data-anchor="Psmart">
-    <video id="myVideo" loop muted data-autoplay>
-    <source data-src="mp4/HUAWEI_Psmart.mp4" type="video/mp4">
-  </video>
-    <div class="layer">
-            <a href="https://youtu.be/fI4OyjEALtQ" target="_blank"><img src="images/icons/play_icon.svg" width="80" height="80"></a>
-    </div>
-    <div class="layer-client">
-        <h1 class="client">Huawei PSmart</p>
-    </div>
-  </section>
+      <section class="vertical-scrolling" id="VideoSection" data-anchor="xAudi">
+        <video id="myVideo" loop muted data-autoplay>
+          <source data-src="mp4/HuaweiXAudi.mp4" type="video/mp4">
+        </video>
+        <div class="layer">
+          <a href="https://youtu.be/rbJe_oFKYUc" target="_blank"><img src="images/icons/play_icon.svg" width="80"
+              height="80"></a>
+        </div>
+        <div class="layer-client">
+          <h1 class="client">Huawei X Audi</p>
+        </div>
+      </section>
 
-  <section class="vertical-scrolling" id="VideoSection" data-anchor="Fiete">
-    <video id="myVideo" loop muted data-autoplay>
-    <source data-src="mp4/Tattoo-Fiete.mp4" type="video/mp4">
-  </video>
-    <div class="layer">
-            <a href="https://youtu.be/HDsVbYjXdNk" target="_blank"><img src="images/icons/play_icon.svg" width="80" height="80"></a>
-    </div>
-    <div class="layer-client">
-        <h1 class="client">Stadtrad Tattoo-Fiete</p>
-    </div>
-  </section>
-
-  <section class="vertical-scrolling" id="VideoSection" data-anchor="xAudi">
-    <video id="myVideo" loop muted data-autoplay>
-    <source data-src="mp4/HuaweiXAudi.mp4" type="video/mp4">
-  </video>
-    <div class="layer">
-            <a href="https://youtu.be/rbJe_oFKYUc" target="_blank"><img src="images/icons/play_icon.svg" width="80" height="80"></a>
-    </div>
-    <div class="layer-client">
-        <h1 class="client">Huawei X Audi</p>
-    </div>
-  </section>
-
-  <section class="vertical-scrolling" id="VideoSection" data-anchor="U3">
-    <video id="myVideo" loop muted data-autoplay>
-    <source data-src="mp4/U3Fiete.mp4" type="video/mp4">
-  </video>
-    <div class="layer">
-            <a href="https://youtu.be/mSlYyPEnsww" target="_blank"><img src="images/icons/play_icon.svg" width="80" height="80"></a>
-    </div>
-    <div class="layer-client">
-        <h1 class="client">Stadtrad U3-Fiete</p>
-    </div>
-  </section>
+      <section class="vertical-scrolling" id="VideoSection" data-anchor="U3">
+        <video id="myVideo" loop muted data-autoplay>
+          <source data-src="mp4/U3Fiete.mp4" type="video/mp4">
+        </video>
+        <div class="layer">
+          <a href="https://youtu.be/mSlYyPEnsww" target="_blank"><img src="images/icons/play_icon.svg" width="80"
+              height="80"></a>
+        </div>
+        <div class="layer-client">
+          <h1 class="client">Stadtrad U3-Fiete</p>
+        </div>
+      </section>
 
 
 
-</div>
+    </div>
 
 </body>
 

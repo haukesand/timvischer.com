@@ -8,7 +8,7 @@
 
   <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
   <link rel="stylesheet" href="mystyle.css">
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <!-- This following line is optional.
     Only necessary if you use the option css3:false and you want to use other easing effects
      rather than "linear", "swing" or "easeInOutCubic". -->
@@ -22,80 +22,90 @@
 
 
 <body>
+  <header class="header-top">
+    <div class="header-inner">
+      <div class="logo-wrap">
+        <a href="index.html">
+          <img src="images/logos/headerlogowhite.svg" width="80" height="70" alt="Tim Vischer Logo">
+        </a>
+      </div>
+      <button class="slide-nav-btn menu" type="button">
+        <span class="nav-bar"></span>
+      </button>
+    </div>
+  </header>
+  <nav class="global-nav">
+    <ul>
+      <li><a href="photos.html">photography</a></li>
+      <li><a href="commercial.html">commercial work</a></li>
+      <li><a href="personal.html">personal work</a></li>
+      <li><a href="spektrum.html">thesis spektrum</a></li>
+      <li><a href="about.html">about</a></li>
+      <li>
+        <a href="https://video.timvischer.com" target="_blank" rel="noopener noreferrer">
+          Video Portfolio 
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 5px; vertical-align: middle;">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  
   <!-- !PAGE CONTENT! -->
   <div class="w3-content" style="max-width:2000px">
 
     <!-- Header -->
-    <header class="w3-container w3-xlarge w3-padding-24">
-      <header class="w3-container w3-xlarge w3-padding-24">
-
-        <div class="header-top clearfix">
-          <div class="section">
-            <a href=#>
-    <button class="slide-nav-btn menu" type="button">
-      <span class="nav-bar"></span>
-    </a>
-            </button>
-            <nav>
-              <ul>
-                <li><a href="/photos.html">photo</a></li>
-                <li><a href="/video.html">video</a></li>
-                <li><a href="/design.html">design</a></li>
-                <li><a href="/about.html">about</a></li>
-              </ul>
-              <!-- <span style="color: #f8f8f8; font-size: 20px; position: relative; top: -50px;left: 150px;">Based on CTPBoston.com</span> -->
-            </nav>
-            <h1 class="l-left"><a href="index.html"><img src="images/logos/headerlogowhite.svg" width="80" height="70"></a></h1>
-          </div>
-        </div>
-      </header>
+                    
 
     <div id="fullpage">
 
-          <section class="vertical-scrolling" id="vokodeSection"data-anchor="vokode">
-            <div class="horizontal-scrolling">
-              <img data-src="images/vokode/1.jpg" id="three">
-              <img data-src="images/vokode/2.jpg" id="three">
-            </div>
-            <div class="horizontal-scrolling">
-              <img data-src="images/vokode/4.jpg" id="three">
-              <img data-src="images/vokode/5.jpg" id="three">
-              <img data-src="images/vokode/6.jpg" id="three">
-            </div>
-          </section>
-          <section class="vertical-scrolling" id="calendariumSection"data-anchor="calendarium">
-            <div class="horizontal-scrolling">
-              <img data-src="images/calendarium/1.jpg" id="three">
-              <img data-src="images/calendarium/3.jpg" id="three">
-              <img data-src="images/calendarium/2.jpg" id="three">
-            </div>
-            <div class="horizontal-scrolling">
-              <img data-src="images/calendarium/4.jpg" id="three">
-              <img data-src="images/calendarium/5.jpg" id="three">
+      <section class="vertical-scrolling" id="vokodeSection" data-anchor="vokode">
+        <div class="horizontal-scrolling">
+          <img data-src="images/vokode/1.jpg" id="three">
+          <img data-src="images/vokode/2.jpg" id="three">
+        </div>
+        <div class="horizontal-scrolling">
+          <img data-src="images/vokode/4.jpg" id="three">
+          <img data-src="images/vokode/5.jpg" id="three">
+          <img data-src="images/vokode/6.jpg" id="three">
+        </div>
+      </section>
+      <section class="vertical-scrolling" id="calendariumSection" data-anchor="calendarium">
+        <div class="horizontal-scrolling">
+          <img data-src="images/calendarium/1.jpg" id="three">
+          <img data-src="images/calendarium/3.jpg" id="three">
+          <img data-src="images/calendarium/2.jpg" id="three">
+        </div>
+        <div class="horizontal-scrolling">
+          <img data-src="images/calendarium/4.jpg" id="three">
+          <img data-src="images/calendarium/5.jpg" id="three">
 
-            </div>
-            <div class="horizontal-scrolling">
-              <img data-src="images/calendarium/6.jpg" id="three">
-              <img data-src="images/calendarium/7.jpg" id="three">
+        </div>
+        <div class="horizontal-scrolling">
+          <img data-src="images/calendarium/6.jpg" id="three">
+          <img data-src="images/calendarium/7.jpg" id="three">
 
-            </div>
-          </section>
-          <section class="vertical-scrolling" id="spaceSection"data-anchor="space">
-            <div class="horizontal-scrolling">
-              <img data-src="images/space/1.jpg" id="three">
-              <img data-src="images/space/3.jpg" id="three">
-            </div>
-            <div class="horizontal-scrolling">
-              <img data-src="images/space/2.jpg" id="three">
-              <img data-src="images/space/4.jpg" id="three">
+        </div>
+      </section>
+      <section class="vertical-scrolling" id="spaceSection" data-anchor="space">
+        <div class="horizontal-scrolling">
+          <img data-src="images/space/1.jpg" id="three">
+          <img data-src="images/space/3.jpg" id="three">
+        </div>
+        <div class="horizontal-scrolling">
+          <img data-src="images/space/2.jpg" id="three">
+          <img data-src="images/space/4.jpg" id="three">
 
-            </div>
-            <div class="horizontal-scrolling">
-              <img data-src="images/space/6.jpg" id="three">
-              <img data-src="images/space/5.jpg" id="three">
+        </div>
+        <div class="horizontal-scrolling">
+          <img data-src="images/space/6.jpg" id="three">
+          <img data-src="images/space/5.jpg" id="three">
 
-            </div>
-          </section>
+        </div>
+      </section>
 
 
 

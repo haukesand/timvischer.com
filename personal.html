@@ -8,7 +8,7 @@
 
   <link rel="stylesheet" type="text/css" href="fullpage.css" />
   <link rel="stylesheet" href="mystyle.css">
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <!-- This following line is optional.
     Only necessary if you use the option css3:false and you want to use other easing effects
      rather than "linear", "swing" or "easeInOutCubic". -->
@@ -22,32 +22,44 @@
 
 
 <body>
+  <header class="header-top">
+    <div class="header-inner">
+      <div class="logo-wrap">
+        <a href="index.html">
+          <img src="images/logos/headerlogowhite.svg" width="80" height="70" alt="Tim Vischer Logo">
+        </a>
+      </div>
+      <button class="slide-nav-btn menu" type="button">
+        <span class="nav-bar"></span>
+      </button>
+    </div>
+  </header>
+  <nav class="global-nav">
+    <ul>
+      <li><a href="photos.html">photography</a></li>
+      <li><a href="commercial.html">commercial work</a></li>
+      <li><a href="personal.html">personal work</a></li>
+      <li><a href="spektrum.html">thesis spektrum</a></li>
+      <li><a href="about.html">about</a></li>
+      <li>
+        <a href="https://video.timvischer.com" target="_blank" rel="noopener noreferrer">
+          Video Portfolio 
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 5px; vertical-align: middle;">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  
   <!-- !PAGE CONTENT! -->
   <div class="w3-content" style="max-width:2000px">
 
     <!-- Header -->
-    <header class="w3-container w3-xlarge w3-padding-24">
-      <div class="header-top clearfix">
-        <div class="section">
-          <a href=#>
-            <button class="slide-nav-btn menu" type="button">
-              <span class="nav-bar"></span>
-          </a>
-          </button>
-          <nav>
-            <ul>
-              <li><a href="photos.html">photography</a></li>
-              <li><a href="commercial.html">commercial work</a></li>
-              <li><a href="personal.html">personal work</a></li>
-              <li><a href="spektrum.html">thesis spektrum</a></li>
-              <li><a href="about.html">about</a></li>
-            </ul>
-            <!-- <span style="color: #f8f8f8; font-size: 20px; position: relative; top: -50px;left: 150px;">Based on CTPBoston.com</span> -->
-          </nav>
-          <h1 class="l-left"><a href="index.html"><img src="images/logos/headerlogowhite.svg" width="80" height="70"></a></h1>
-        </div>
-      </div>
-    </header>
+                    
+    
 
     <div id="fullpage">
 
@@ -56,7 +68,8 @@
           <source data-src="mp4/Heidi.mp4" type="video/mp4">
         </video>
         <div class="layer">
-          <a href="https://youtu.be/U_8LQt6ATHo" target="_blank"><img src="images/icons/play_icon.svg" width="80" height="80"></a>
+          <a href="https://youtu.be/U_8LQt6ATHo" target="_blank"><img src="images/icons/play_icon.svg" width="80"
+              height="80"></a>
         </div>
       </section>
 
@@ -65,7 +78,8 @@
           <source data-src="mp4/Jaro.mp4" type="video/mp4">
         </video>
         <div class="layer">
-          <a href="https://youtu.be/BnTaUMZ9d2U" target="_blank"><img src="images/icons/play_icon.svg" width="80" height="80"></a>
+          <a href="https://youtu.be/BnTaUMZ9d2U" target="_blank"><img src="images/icons/play_icon.svg" width="80"
+              height="80"></a>
         </div>
       </section>
 
@@ -74,7 +88,8 @@
           <source data-src="mp4/Swana.mp4" type="video/mp4">
         </video>
         <div class="layer">
-          <a href="https://vimeo.com/113004358" target="_blank"><img src="images/icons/play_icon.svg" width="80" height="80"></a>
+          <a href="https://vimeo.com/113004358" target="_blank"><img src="images/icons/play_icon.svg" width="80"
+              height="80"></a>
         </div>
       </section>
 
@@ -83,7 +98,8 @@
           <source data-src="mp4/Elina.mp4" type="video/mp4">
         </video>
         <div class="layer">
-          <a href="https://youtu.be/bYV8Td8efM0" target="_blank"><img src="images/icons/play_icon.svg" width="80" height="80"></a>
+          <a href="https://youtu.be/bYV8Td8efM0" target="_blank"><img src="images/icons/play_icon.svg" width="80"
+              height="80"></a>
         </div>
       </section>
 
@@ -92,7 +108,8 @@
           <source data-src="mp4/Candy.mp4" type="video/mp4">
         </video>
         <div class="layer">
-          <a href="https://youtu.be/udqVBLmHsbs" target="_blank"><img src="images/icons/play_icon.svg" align="center" width="80" height="80"></a>
+          <a href="https://youtu.be/udqVBLmHsbs" target="_blank"><img src="images/icons/play_icon.svg" align="center"
+              width="80" height="80"></a>
         </div>
 
       </section>
@@ -101,7 +118,8 @@
           <source data-src="mp4/Alissa.mp4" type="video/mp4">
         </video>
         <div class="layer">
-          <a href="https://youtu.be/8yIPwB5xNZ0" target="_blank"><img src="images/icons/play_icon.svg" width="80" height="80"></a>
+          <a href="https://youtu.be/8yIPwB5xNZ0" target="_blank"><img src="images/icons/play_icon.svg" width="80"
+              height="80"></a>
         </div>
       </section>
 
@@ -111,7 +129,8 @@
           <source data-src="mp4/Sarah.mp4" type="video/mp4">
         </video>
         <div class="layer">
-          <a href="https://youtu.be/sEOGeyUKbMI" target="_blank"><img src="images/icons/play_icon.svg" width="80" height="80"></a>
+          <a href="https://youtu.be/sEOGeyUKbMI" target="_blank"><img src="images/icons/play_icon.svg" width="80"
+              height="80"></a>
         </div>
       </section>
 
@@ -122,7 +141,8 @@
           <source data-src="mp4/Alissa360.mp4" type="video/mp4">
         </video>
         <div class="layer">
-          <a href="https://youtu.be/BnTaUMZ9d2U" target="_blank"><img src="images/icons/play_icon.svg" width="80" height="80"></a>
+          <a href="https://youtu.be/BnTaUMZ9d2U" target="_blank"><img src="images/icons/play_icon.svg" width="80"
+              height="80"></a>
         </div>
       </section>
 
@@ -131,7 +151,8 @@
           <source data-src="mp4/Aquarium.mp4" type="video/mp4">
         </video>
         <div class="layer">
-          <a href="https://vimeo.com/130528658" target="_blank"><img src="images/icons/play_icon.svg" width="80" height="80"></a>
+          <a href="https://vimeo.com/130528658" target="_blank"><img src="images/icons/play_icon.svg" width="80"
+              height="80"></a>
         </div>
       </section>
 
